@@ -7,3 +7,8 @@ Im making some changes for shits and giggles
 * git add .
 * git status
 * git commit -m "initial commit"
+
+##Next Steps
+
+* git commit -a -m "updated"
+* git push

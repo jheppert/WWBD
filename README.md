@@ -1,9 +1,9 @@
 #School Project
 Advanced Web Group Project:
-Jeff Heppert
-Juju Alhumaid
-Lou Fillingham
-Emilee Serafine
+* Jeff Heppert
+* Juju Alhumaid
+* Lou Fillingham
+* Emilee Serafine
 
 * git init
 * git status

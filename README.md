@@ -5,4 +5,5 @@ School is so awesome
 * git status
 * git add .
 * git status
-* git commit 
+* git commit -m "initial commit"
+* git commit -a -m "updated the readme file"

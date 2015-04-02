@@ -11,4 +11,4 @@ Im making some changes for shits and giggles
 ##Next Steps
 
 * git commit -a -m "updated"
-* git push
+* git push -u origin master

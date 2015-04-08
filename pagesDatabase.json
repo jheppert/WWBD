@@ -1,0 +1,13 @@
+{
+    "story":{
+        "title":"What Would Bib Do?",
+        "page":{
+            "ID":1,
+            "bodyText":"",
+            "choiceLinks":{
+                "linkText":"",
+                "linkDestinationPage":""
+            }
+        }
+    }
+}

@@ -1,7 +1,5 @@
 #School Project
-School Project
-Im making some changes for shits and giggles
-
+Steps for using git in the terminal:
 * git init 
 * git status
 * git add .
@@ -12,3 +10,4 @@ Im making some changes for shits and giggles
 
 * git commit -a -m "updated"
 * git push -u origin master
+

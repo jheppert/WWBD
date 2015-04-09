@@ -6,13 +6,12 @@
 - Emilee Serafine
 _______________________
 
-* git init
+Steps for using git in the terminal:
+* git init 
 * git status
 * git add .
 * git status
 * git commit -m "initial commit"
-
-* git commit -a -m "updated the readme file"
 
 ##Next steps
 

@@ -1,0 +1,9 @@
+.page {
+    padding: 10% 0;
+    height: 100vh;
+}
+
+a, a.visited {
+    border: 1px solid #ddd;
+    margin-bottom: .5em;
+}

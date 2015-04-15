@@ -3,47 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>JSON Test</title>
+    <title>JSON Story Test</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="uikit/css/uikit.css" />
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="jquery-1.11.2.js"></script>
-    <script type="text/javascript" src="pageDatabase.js"></script>
+    <script type="text/javascript" src="storyDatabase.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="uikit/js/uikit.js"></script>
 </head>
 <body>
-
-<script type="text/javascript">  
-
-function printPageText(currentPageID){
-    return jsonDatabase.pages[currentPageID].bodyText;
-}
-
-
-function printPageLinks(currentPageID){
-    if(jsonDatabase.pages[currentPageID].end){
-        return "THE END";
-    } else {
-        var resultLength = jsonDatabase.pages[currentPageID].choiceLinks.length;
-        var resultString = "";
-        for(var i=0;i<resultLength; i++){
-            // document.write("<a href='" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + "'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
-            resultString += "<a href='javascript:addNewSection(" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + ");'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ";
-        }
-        return resultString;
-    }
-}
-
-
-function addNewSection(newSectionID){
-    var newSection = "<section id='page-" + newSectionID + "'><p>" + printPageText(newSectionID) + "</p><div>" + printPageLinks(newSectionID) + "</div></section>";
-    $("#content").append(newSection);
-}
-
-</script>
     
 <div id="content">
-    <section>
-        <p><script type="text/javascript">document.write(printPageText(0));</script></p>
-        <div><script type="text/javascript">document.write(printPageLinks(0));</script></div>
+    <section class="page page-0 uk-width-medium-1-2 uk-container-center">
+        <div><p><script type="text/javascript">document.write(returnPageText(0));</script></p></div>
+        <div><script type="text/javascript">document.write(returnPageLinks(0));</script></div>
     </section>
 </div>
 

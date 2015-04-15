@@ -1,4 +1,4 @@
-var jsonDatabase = {
+var storyDatabase = {
         "pages":[
             {
                 "ID":0,

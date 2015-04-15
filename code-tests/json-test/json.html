@@ -7,69 +7,39 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <script type="text/javascript" src="jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="pageDatabase.js"></script>
 </head>
 <body>
 
 <script type="text/javascript">  
 
-var jsonDatabase = {
-        "pages":[
-            {
-                "ID":1,
-                "bodyText":"This is the first part of the story",
-                "choiceLinks":[
-                    {
-                        "linkText":"First choice, first page",
-                        "linkDestination":2
-                    },
-                    {
-                        "linkText":"Second choice, first page",
-                        "linkDestination":3
-                    },
-                    {
-                        "linkText":"Third choice, first page",
-                        "linkDestination":4
-                    }
-                ]
-            },
-            {
-                "ID":2,
-                "bodyText":"This is the next part of the story",
-                "choiceLinks":[
-                    {
-                        "linkText":"First choice, second page",
-                        "linkDestination":4
-                    },
-                    {
-                        "linkText":"Second choice, second page",
-                        "linkDestination":5
-                    }
-                ]
-            }
-        ]
-}
-
 function printPageText(currentPageID){
-    // $.getJSON("pagesDatabase.json", function(json) {
-    //     document.write(json.story.pages[currentPageID].bodyText);
-    // });
     document.write(jsonDatabase.pages[currentPageID].bodyText);
 }
 
-function printPageLinks(currentPageID){
-    // $.getJSON("pagesDatabase.json", function(json) {
 
-    //     var resultLength = json.story.pages[currentPageID].choiceLinks.length;
-    //     for(var i=0;i<resultLength; i++){
-    //         document.write("<a href='" + json.story.pages[currentPageID].choiceLinks[i].linkDestination + "'>" + json.story.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
-    //     }
-    // });
+function printPageLinks(currentPageID){
+    var resultLength = jsonDatabase.pages[currentPageID].choiceLinks.length;
+    for(var i=0;i<resultLength; i++){
+        // document.write("<a href='" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + "'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
+        document.write("<a href='javascript:addNewSection(" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + ");'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
+    }
+}
+
+
+function addNewSection(newSectionID){
+    var newSection = "<section id='page-" + newSectionID + "'><p>Paragraph</p><div>" + printPageText(newSectionID) + "</div></section>";
+    $("div#content").append(newSection);
 }
 
 </script>
-
-<p><script type="text/javascript">printPageText(0);</script></p>
-<div><script type="text/javascript">printPageLinks(0);</script></div>
+    
+<div id="content">
+    <section>
+        <p><script type="text/javascript">printPageText(0);</script></p>
+        <div><script type="text/javascript">printPageLinks(0);</script></div>
+    </section>
+</div>
 
 </body>
 </html>

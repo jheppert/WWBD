@@ -14,30 +14,36 @@
 <script type="text/javascript">  
 
 function printPageText(currentPageID){
-    document.write(jsonDatabase.pages[currentPageID].bodyText);
+    return jsonDatabase.pages[currentPageID].bodyText;
 }
 
 
 function printPageLinks(currentPageID){
-    var resultLength = jsonDatabase.pages[currentPageID].choiceLinks.length;
-    for(var i=0;i<resultLength; i++){
-        // document.write("<a href='" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + "'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
-        document.write("<a href='javascript:addNewSection(" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + ");'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
+    if(jsonDatabase.pages[currentPageID].end){
+        return "THE END";
+    } else {
+        var resultLength = jsonDatabase.pages[currentPageID].choiceLinks.length;
+        var resultString = "";
+        for(var i=0;i<resultLength; i++){
+            // document.write("<a href='" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + "'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
+            resultString += "<a href='javascript:addNewSection(" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkDestination + ");'>" + jsonDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ";
+        }
+        return resultString;
     }
 }
 
 
 function addNewSection(newSectionID){
-    var newSection = "<section id='page-" + newSectionID + "'><p>Paragraph</p><div>" + printPageText(newSectionID) + "</div></section>";
-    $("div#content").append(newSection);
+    var newSection = "<section id='page-" + newSectionID + "'><p>" + printPageText(newSectionID) + "</p><div>" + printPageLinks(newSectionID) + "</div></section>";
+    $("#content").append(newSection);
 }
 
 </script>
     
 <div id="content">
     <section>
-        <p><script type="text/javascript">printPageText(0);</script></p>
-        <div><script type="text/javascript">printPageLinks(0);</script></div>
+        <p><script type="text/javascript">document.write(printPageText(0));</script></p>
+        <div><script type="text/javascript">document.write(printPageLinks(0));</script></div>
     </section>
 </div>
 

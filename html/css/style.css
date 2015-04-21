@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+.page {
+  padding: 5% 2%;
+  height: 100vh;
+  width: 100%; }
+
+a, a.visited {
+  text-decoration: none; }
+
+.pageLink, .pageLink:visited {
+  display: inline-block;
+  color: black;
+  /*border: 1px solid #ddd;*/
+  border-radius: 3px;
+  background-color: #ddd;
+  margin-bottom: .5em;
+  width: 100%;
+  padding: .5em;
+  font-size: 1.2em; }
+
+.pageLink:hover, .pageLink:active {
+  background-color: #CCCCFF; }
+
+.dialog {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 1em;
+  border-radius: 3px; }
+
+.city {
+  background: url("../img/backgrounds_city.jpg");
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */

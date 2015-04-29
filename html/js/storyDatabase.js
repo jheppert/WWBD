@@ -3,6 +3,7 @@ var storyDatabase = {
             {
                 "ID":0,
                 "end":false,
+                "scene":"city",
                 "bodyText":"Once upon a time there was a robot named Bib. Bib had lived in the city his whole life, but was starting to hate it. He decided one day to leave the city in search of nature and began his long trip to the forest.</p><p>As he approached the forest for the first time, he heard some scuffling. It sounded like a fight.</p><p>He headed toward the sound and found three mean hawks trying to trap a fluffy little kitten. “That poor kitten!” Bib thinks, but realizes he has a choice.",
                 "choiceLinks":[
                     {
@@ -26,6 +27,7 @@ var storyDatabase = {
             {
                 "ID":1,
                 "end":false,
+                "scene":"forest",
                 "bodyText":"Bib tries to help the hawks capture the kitten, but the kitten dies in the process. The hawks start squawking back and forth to each other, one of them points a feather at Bib and manages to say, “murderer!”",
                 "choiceLinks":[
                     {
@@ -45,6 +47,7 @@ var storyDatabase = {
             {
                 "ID":2,
                 "end":false,
+                "scene":"forest",
                 "bodyText":"Another group of hawks fly in and they draw their talons. They begin to squawk back and forth to each other, but Bib doesn't speak hawk! What should Bib do?",
                 "choiceLinks":[
                     {
@@ -64,6 +67,7 @@ var storyDatabase = {
             {
                 "ID":3,
                 "end":false,
+                "scene":"forest",
                 "bodyText":"Bib and the kitten join forces and end up killing the hawks. The kitten is surprisingly deadly with his razor sharp claws and it frightens Bib a bit. Bib becomes suspicious.",
                 "choiceLinks":[
                     {
@@ -83,26 +87,31 @@ var storyDatabase = {
             {
                 "ID":4,
                 "end":true,
+                "scene":"beach",
                 "bodyText":"The hawks don't understand robot and carry Bib off into the sky. They drop him into the ocean and he is never seen again."
             },
             {
                 "ID":5,
                 "end":true,
+                "scene":"forest",
                 "bodyText":"The kitten proves Bib's suspicions. He's too fierce and kills Bib with a single, sharp kitten claw. The kitten then becomes the ruler of the forest."
             },
             {
                 "ID":6,
                 "end":true,
+                "scene":"forest",
                 "bodyText":"Bib successfully scares away the hawks for good and becomes the new leader of the forest. He lives happily ever after in nature, respected and feared by all who live in the forest."
             },
             {
                 "ID":7,
                 "end":true,
+                "scene":"beach",
                 "bodyText":"Bib luckily escapes with his life, but he still can't bring himself to go back to city life. He continues on until he reaches the ocean. Though it's not the forest, Bib is happy to live out the rest of his life in nature, beach style."
             },
             {
                 "ID":8,
                 "end":true,
+                "scene":"beach",
                 "bodyText":"Once the bodies are taken care of, Bib and the kitten realize they make a pretty good team. They take off together, heading west until they reach the ocean. They live out the rest of their days as fugitives on the beach."
             }
         ]

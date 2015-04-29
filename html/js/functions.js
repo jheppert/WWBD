@@ -23,12 +23,17 @@
         }
     }
 
+    function returnPageSetting(currentPageID){
+        return storyDatabase.pages[currentPageID].scene;
+    }
+
     // addNewSection(int)
     // Constructs a new section element based on the ID passed in
     // Appends the new section as the last element in the #content
     function addNewSection(newSectionID){
+        $("a.pageLink").fadeOut();
         $("section#activeSection").removeAttr("id");
-        var newSection = "<section class='page page-" + newSectionID + "' id='activeSection'><div class='dialog'><div><p>" + returnPageText(newSectionID) + "</p></div><div>" + returnPageLinks(newSectionID) + "</div></div></section>";
+        var newSection = "<section class='page page-" + newSectionID + " " + returnPageSetting(newSectionID) + "' id='activeSection'><div class='dialog'><div><p>" + returnPageText(newSectionID) + "</p></div><div>" + returnPageLinks(newSectionID) + "</div></div></section>";
         $("#content").append(newSection);
         goToNewSection();
     }
@@ -37,7 +42,7 @@
     // scrollToElement(string, int)
     // scrolls to an anchor id of "target", with offset "fromTop" at "speed"
     function scrollToElement( target, fromTop ) {
-        var speed = 1000;
+        var speed = 2000;
         var destination = jQuery( target ).offset().top - fromTop;
         jQuery( 'html:not(:animated),body:not(:animated)' ).animate( { scrollTop: destination}, speed, function() {
             window.location.hash = "";

@@ -4,6 +4,10 @@
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box; }
 
+html, body {
+  margin: 0;
+  padding: 0; }
+
 .page {
   padding: 5% 2%;
   height: 100vh;
@@ -36,6 +40,17 @@ a, a.visited {
 
 .city {
   background: url("../img/backgrounds_city.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
+
+.forest {
+  background: url("../img/backgrounds_forest.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+.beach {
+  background: url("../img/backgrounds_beach.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=style.css.map */

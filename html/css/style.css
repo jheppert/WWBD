@@ -53,4 +53,20 @@ a, a.visited {
   background-size: cover;
   background-attachment: fixed; }
 
+@media (max-width: 1200px) {
+  .city {
+    background: url("../img/backgrounds_city-1200.jpg");
+    background-size: cover;
+    background-attachment: fixed; }
+
+  .forest {
+    background: url("../img/backgrounds_forest-1200.jpg");
+    background-size: cover;
+    background-attachment: fixed; }
+
+  .beach {
+    background: url("../img/backgrounds_beach-1200.jpg");
+    background-size: cover;
+    background-attachment: fixed; } }
+
 /*# sourceMappingURL=style.css.map */

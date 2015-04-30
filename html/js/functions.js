@@ -16,7 +16,7 @@
             var resultLength = storyDatabase.pages[currentPageID].choiceLinks.length;
             var resultString = "";
             for(var i=0;i<resultLength; i++){
-                // document.write("<a href='" + storyDatabase.pages[currentPageID].choiceLinks[i].linkDestination + "'>" + storyDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ");
+                // PUT STUFF HERE FOR ICON CHOOSING MENU
                 resultString += "<a class='pageLink' href='javascript:addNewSection(" + storyDatabase.pages[currentPageID].choiceLinks[i].linkDestination + ");'>" + storyDatabase.pages[currentPageID].choiceLinks[i].linkText + "</a> ";
             }
             return resultString;

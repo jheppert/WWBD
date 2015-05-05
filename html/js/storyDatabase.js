@@ -8,19 +8,23 @@ var storyDatabase = {
                 "choiceLinks":[
                     {
                         "linkText":"Bib can continue on--this is not his fight after all!",
-                        "linkDestination":2
+                        "linkDestination":2,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Help the hawks, perhaps they're the controllers of this forest and can help Bib start his new life in the forest.",
-                        "linkDestination":1
+                        "linkDestination":1,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Attack the hawks! Bib loves kittens and these hawks aren't fighting fair!",
-                        "linkDestination":3
+                        "linkDestination":3,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Wait and see if someone else will come in and break up the fight.",
-                        "linkDestination":2
+                        "linkDestination":2,
+                        "linkIcon":"icon"
                     }
                 ]
             },
@@ -32,15 +36,18 @@ var storyDatabase = {
                 "choiceLinks":[
                     {
                         "linkText":"Bib tries to explain himself. He was trying to help!",
-                        "linkDestination":4
+                        "linkDestination":4,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Bib turns on the hawks and tries to take them down. They made him murder an adorable kitten!",
-                        "linkDestination":6
+                        "linkDestination":6,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Bib runs away as fast as he can.",
-                        "linkDestination":7
+                        "linkDestination":7,
+                        "linkIcon":"icon"
                     }
                 ]
             },
@@ -52,15 +59,18 @@ var storyDatabase = {
                 "choiceLinks":[
                     {
                         "linkText":"Bib tries to explain himself. He didn't do anything wrong!",
-                        "linkDestination":4
+                        "linkDestination":4,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Attack those hawks too, damn it. Who the f*ck do they think they are?",
-                        "linkDestination":6
+                        "linkDestination":6,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Run for your life!",
-                        "linkDestination":7
+                        "linkDestination":7,
+                        "linkIcon":"icon"
                     }
                 ]
             },
@@ -72,15 +82,18 @@ var storyDatabase = {
                 "choiceLinks":[
                     {
                         "linkText":"Feeing threatened, Bib attacks the kitten.",
-                        "linkDestination":5
+                        "linkDestination":5,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Bib leaves the area, keeping an eye on the kitten at all times.",
-                        "linkDestination":7
+                        "linkDestination":7,
+                        "linkIcon":"icon"
                     },
                     {
                         "linkText":"Bib and the kitten scramble to hide the bodies, keeping an eye on one another.",
-                        "linkDestination":8
+                        "linkDestination":8,
+                        "linkIcon":"icon"
                     }
                 ]
             },

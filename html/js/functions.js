@@ -31,7 +31,8 @@ function linkMarcoPolo(linkMarco) {
     // show the data-polo matched number link (add class?)
     // make sure to use sibling to only affect current group links
     // alert(linkMarco);
-    $(this).siblings(".pageLinkContainer").children("[data-linkPolo=" + linkMarco + "]");
+    $(this).siblings("div.pageLinkContainer").addClass("pageLinkActive");
+    alert("hi");
 }
 
 function returnPageSetting(currentPageID){

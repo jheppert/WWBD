@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -7,6 +8,29 @@
 html, body {
   margin: 0;
   padding: 0; }
+
+body {
+  font-family: Georgia, serif;
+  font-size: 16px; }
+
+.nav {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  opacity: 1; }
+  .nav a {
+    display: block;
+    float: left;
+    width: 50px;
+    margin-left: 2em;
+    height: 100%; }
+    .nav a:first-child {
+      margin-left: 0; }
+    .nav a img {
+      width: 100%;
+      display: block;
+      border-radius: 50%;
+      background-color: gray; }
 
 .page {
   padding: 5% 2%;
@@ -79,11 +103,17 @@ a, a.visited {
   background-color: #ccc;
   padding: 10px; }
 
-#canvas {
+#robot {
   height: 40vh;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50vw; }
+
+.reverseBib {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg); }
 
 @media (max-width: 1200px) {
   .city {

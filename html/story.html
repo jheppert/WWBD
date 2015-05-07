@@ -19,27 +19,30 @@
     <script src="js/Flash-Robot.js"></script>
 </head>
 <body onload="init();">
-    
-<div id="content">
-    <section id="slide-0" class="page page-0 city"
-        data-center="opacity: 1;"
-        data-top-bottom="opacity: 0;"
-        data-anchor-target="#slide-0"
-    >
-        <div class="dialog">
-            <div><p><script type="text/javascript">document.write(returnPageText(0));</script></p></div>
-            <script type="text/javascript">document.write(returnPageLinks(0));</script>
-        </div>
-        <canvas id="canvas" width="500" height="600"></canvas>
-    </section>
-</div>
 
-<script type="text/javascript">
-$("#canvas").click(function(){
-    // alert("hi");
-    handleComplete();
-});
-</script>
+
+    
+    <div id="content">
+        <section id="slide-0" class="page page-0 city"
+            data-center="opacity: 1;"
+            data-top-bottom="opacity: 0;"
+            data-anchor-target="#slide-0"
+        >
+            <div class="dialog">
+                <div><p><script type="text/javascript">document.write(returnPageText(0));</script></p></div>
+                <script type="text/javascript">document.write(returnPageLinks(0));</script>
+            </div>
+            
+        </section>
+
+        <canvas id="robot" width="500" height="600"></canvas>
+
+        <nav class="nav">
+            <a href=""><img src="img/icon.png" alt=""></a>
+            <a href=""><img src="img/icon.png" alt=""></a>
+        </nav>
+
+    </div>
 
 </body>
 </html>

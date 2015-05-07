@@ -227,3 +227,6 @@ var lib, images, createjs;
 // window.p.stop();
 // window.p.play();
 // window.p.gotoAndStop("start"); ??
+
+// Full list of functions:
+// http://createjs.com/Docs/EaselJS/classes/MovieClip.html

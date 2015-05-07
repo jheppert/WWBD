@@ -9,22 +9,22 @@ var storyDatabase = {
                     {
                         "linkText":"Bib can continue on--this is not his fight after all!",
                         "linkDestination":2,
-                        "linkIcon":"icon"
+                        "linkIcon":"run"
                     },
                     {
                         "linkText":"Help the hawks, perhaps they're the controllers of this forest and can help Bib start his new life in the forest.",
                         "linkDestination":1,
-                        "linkIcon":"icon"
+                        "linkIcon":"help"
                     },
                     {
                         "linkText":"Attack the hawks! Bib loves kittens and these hawks aren't fighting fair!",
                         "linkDestination":3,
-                        "linkIcon":"icon"
+                        "linkIcon":"attack"
                     },
                     {
                         "linkText":"Wait and see if someone else will come in and break up the fight.",
                         "linkDestination":2,
-                        "linkIcon":"icon"
+                        "linkIcon":"wait"
                     }
                 ]
             },
@@ -37,17 +37,17 @@ var storyDatabase = {
                     {
                         "linkText":"Bib tries to explain himself. He was trying to help!",
                         "linkDestination":4,
-                        "linkIcon":"icon"
+                        "linkIcon":"explain"
                     },
                     {
                         "linkText":"Bib turns on the hawks and tries to take them down. They made him murder an adorable kitten!",
                         "linkDestination":6,
-                        "linkIcon":"icon"
+                        "linkIcon":"attack"
                     },
                     {
                         "linkText":"Bib runs away as fast as he can.",
                         "linkDestination":7,
-                        "linkIcon":"icon"
+                        "linkIcon":"run"
                     }
                 ]
             },
@@ -60,17 +60,17 @@ var storyDatabase = {
                     {
                         "linkText":"Bib tries to explain himself. He didn't do anything wrong!",
                         "linkDestination":4,
-                        "linkIcon":"icon"
+                        "linkIcon":"explain"
                     },
                     {
                         "linkText":"Attack those hawks too, damn it. Who the f*ck do they think they are?",
                         "linkDestination":6,
-                        "linkIcon":"icon"
+                        "linkIcon":"attack"
                     },
                     {
                         "linkText":"Run for your life!",
                         "linkDestination":7,
-                        "linkIcon":"icon"
+                        "linkIcon":"run"
                     }
                 ]
             },
@@ -83,17 +83,17 @@ var storyDatabase = {
                     {
                         "linkText":"Feeing threatened, Bib attacks the kitten.",
                         "linkDestination":5,
-                        "linkIcon":"icon"
+                        "linkIcon":"attack"
                     },
                     {
                         "linkText":"Bib leaves the area, keeping an eye on the kitten at all times.",
                         "linkDestination":7,
-                        "linkIcon":"icon"
+                        "linkIcon":"run"
                     },
                     {
                         "linkText":"Bib and the kitten scramble to hide the bodies, keeping an eye on one another.",
                         "linkDestination":8,
-                        "linkIcon":"icon"
+                        "linkIcon":"eye"
                     }
                 ]
             },

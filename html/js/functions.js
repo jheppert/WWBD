@@ -3,7 +3,7 @@
 var canvas, stage, exportRoot;
 
 function init() {
-    canvas = document.getElementById("canvas");
+    canvas = document.getElementById("robot");
     images = images||{};
 
     var loader = new createjs.LoadQueue(false);
@@ -60,6 +60,11 @@ function returnPageLinks(currentPageID){
     }
 }
 
+function returnPageSetting(currentPageID){
+    return storyDatabase.pages[currentPageID].scene;
+}
+
+
 
 // linkMarcoPolo(int)
 function linkMarcoPolo(linkMarco) {
@@ -69,10 +74,6 @@ function linkMarcoPolo(linkMarco) {
     // make sure to use sibling to only affect current group links
     $("a").removeClass("pageLinkActive");
     $(".pageLinkContainer").children("a[data-linkPolo='" + linkMarco +"']").addClass("pageLinkActive");
-}
-
-function returnPageSetting(currentPageID){
-    return storyDatabase.pages[currentPageID].scene;
 }
 
 // addNewSection(int)
@@ -90,7 +91,7 @@ function addNewSection(newSectionID){
 // scrollToElement(string, int)
 // scrolls to an anchor id of "target", with offset "fromTop" at "speed"
 function scrollToElement( target, fromTop ) {
-    var speed = 5000;
+    var speed = 3000;
     var destination = jQuery( target ).offset().top - fromTop;
     jQuery( 'html:not(:animated),body:not(:animated)' ).animate( { scrollTop: destination}, speed, function() {
         window.location.hash = "";
@@ -117,12 +118,28 @@ $(document).ready(function(){
     window.p.gotoAndStop("start");
 
 
+    var lastPosition = 0;
     $(window).scroll(function(){
-        console.log("scroll");
-        var windowPosition = $(window).scrollTop();
-        $("#canvas").css("left", windowPosition * 2);
-        window.p.play();
+        var currentScrollTop = $(this).scrollTop();
+        if (currentScrollTop > lastPosition){
+            console.log("scrolling down");
+            $("#robot").removeClass("reverseBib");
+            window.p.play();
+        } else {
+            // flip bib around
+            // p.scaleX(-1, 1);
+            $("#robot").addClass("reverseBib");
+            console.log("scrolling up");
+        }
+        $("#robot").css("left", currentScrollTop * 2);
+        lastPosition = currentScrollTop;
 
+    });
+
+    $(window).on("scrollstop", function() {
+        console.log("in scrollstop");
+        window.p.gotoAndStop("start");
+        console.log("still in scrollstop");
     });
 
 });

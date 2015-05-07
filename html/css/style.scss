@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
+
 $border-corners: 3px;
 
 * {
@@ -10,6 +12,34 @@ $border-corners: 3px;
 html, body {
     margin: 0;
     padding: 0;
+}
+body {
+    // font-family: Quicksand;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+.nav {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    opacity: 1;
+    a {
+        display: block;
+        float: left;
+        width: 50px;
+        margin-left: 2em;
+        height: 100%;
+        &:first-child{
+            margin-left: 0;
+        }
+        img {
+            width: 100%;
+            display: block;
+            border-radius: 50%;
+            background-color: gray;
+        }
+    }
 }
 
 .page {
@@ -95,12 +125,22 @@ a, a.visited {
     padding: 10px;
 }
 
-#canvas {
+#robot {
     height: 40vh;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 50vw;
+    // transform: rotateY(0deg);
+    // -webkit-transform: rotateY(0deg);
+    // -moz-transform: rotateY(0deg);
+    // -o-transform: rotateY(0deg);
     // left: calc(50vw - ((5/6) * 40vh));
+}
+.reverseBib {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 

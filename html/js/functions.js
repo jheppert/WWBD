@@ -90,7 +90,7 @@ function addNewSection(newSectionID){
 // scrollToElement(string, int)
 // scrolls to an anchor id of "target", with offset "fromTop" at "speed"
 function scrollToElement( target, fromTop ) {
-    var speed = 2000;
+    var speed = 5000;
     var destination = jQuery( target ).offset().top - fromTop;
     jQuery( 'html:not(:animated),body:not(:animated)' ).animate( { scrollTop: destination}, speed, function() {
         window.location.hash = "";
@@ -114,5 +114,15 @@ $(document).ready(function(){
         forceHeight: false
     });
     s.refresh($('.homeSlide'));
+    window.p.gotoAndStop("start");
+
+
+    $(window).scroll(function(){
+        console.log("scroll");
+        var windowPosition = $(window).scrollTop();
+        $("#canvas").css("left", windowPosition * 2);
+        window.p.play();
+
+    });
 
 });

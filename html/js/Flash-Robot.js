@@ -153,7 +153,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,500,600);
 
 // stage content:
 (lib.FlashRobot = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+this.initialize(mode,startPosition,loop,{start:0});
 
 	// Layer 1
 	this.instance = new lib.frames_00000();
@@ -217,6 +217,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(250,287.1,500,600);
+window.p = p;
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{});
 var lib, images, createjs;
+
+
+
+// window.p.stop();
+// window.p.play();
+// window.p.gotoAndStop("start"); ??

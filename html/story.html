@@ -11,8 +11,14 @@
     <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
     <script type="text/javascript" src="js/skrollr.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
+
+    <script src="libs/easeljs-0.7.1.min.js"></script>
+    <script src="libs/tweenjs-0.5.1.min.js"></script>
+    <script src="libs/movieclip-0.7.1.min.js"></script>
+    <script src="libs/preloadjs-0.4.1.min.js"></script>
+    <script src="js/Flash-Robot.js"></script>
 </head>
-<body>
+<body onload="init();">
     
 <div id="content">
     <section id="slide-0" class="page page-0 city"
@@ -24,6 +30,7 @@
             <div><p><script type="text/javascript">document.write(returnPageText(0));</script></p></div>
             <script type="text/javascript">document.write(returnPageLinks(0));</script>
         </div>
+        <canvas id="canvas" width="500" height="600"></canvas>
     </section>
 </div>
 

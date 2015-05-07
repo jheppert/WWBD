@@ -79,6 +79,11 @@ a, a.visited {
   background-color: #ccc;
   padding: 10px; }
 
+#canvas {
+  height: 40vh;
+  position: absolute;
+  bottom: 0; }
+
 @media (max-width: 1200px) {
   .city {
     background: url("../img/backgrounds_city-1200.jpg");

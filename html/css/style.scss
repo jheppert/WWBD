@@ -95,6 +95,13 @@ a, a.visited {
     padding: 10px;
 }
 
+#canvas {
+    height: 40vh;
+    position: absolute;
+    bottom: 0;
+    // left: calc(50vw - ((5/6) * 40vh));
+}
+
 
 @media (max-width: 1200px) {
 

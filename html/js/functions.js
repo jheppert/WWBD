@@ -115,31 +115,42 @@ $(document).ready(function(){
         forceHeight: false
     });
     s.refresh($('.homeSlide'));
-    window.p.gotoAndStop("start");
+    window.p.stop();
 
 
     var lastPosition = 0;
     $(window).scroll(function(){
         var currentScrollTop = $(this).scrollTop();
         if (currentScrollTop > lastPosition){
-            console.log("scrolling down");
             $("#robot").removeClass("reverseBib");
             window.p.play();
+            console.log("scrolling down");
         } else {
-            // flip bib around
-            // p.scaleX(-1, 1);
             $("#robot").addClass("reverseBib");
+            window.p.play();
             console.log("scrolling up");
         }
-        $("#robot").css("left", currentScrollTop * 2);
         lastPosition = currentScrollTop;
 
-    });
+        // Move Bib according to page scroll:
+        // scrolling 1 sectionHeight moves Bib (sectionWidth / 3) from left
+        // currentScrollTop / sectionHeight = percentage of section scrolled
+        var robotWidth = $("#robot").width();
+        var windowHeight = $(window).height();
+        var windowWidth = $(window).width();
+        var percentageScrolled = currentScrollTop / windowHeight;
+        var moveBibLeft = (percentageScrolled * (windowWidth / 2)) - ((robotWidth / 2) * percentageScrolled);
+        $("#robot").css("left", moveBibLeft + "px");
+        console.log(percentageScrolled);
 
-    $(window).on("scrollstop", function() {
-        console.log("in scrollstop");
-        window.p.gotoAndStop("start");
-        console.log("still in scrollstop");
-    });
+        // Check for scroll stop, and stop Bib's walk animation:
+        clearTimeout( $.data( this, "scrollCheck" ) );
+        $.data( this, "scrollCheck", setTimeout(function() {
+            window.p.stop();
+            console.log("scroll stopped");
+        }, 250) );
 
-});
+    }); // End $(window).scroll function
+
+
+}); // End $(document).ready function

@@ -139,7 +139,7 @@ $(document).ready(function(){
         var windowHeight = $(window).height();
         var windowWidth = $(window).width();
         var percentageScrolled = currentScrollTop / windowHeight;
-        var moveBibLeft = (percentageScrolled * (windowWidth / 2)) - ((robotWidth / 2) * percentageScrolled);
+        var moveBibLeft = (percentageScrolled * (windowWidth / 3)) - ((robotWidth / 3) * percentageScrolled);
         $("#robot").css("left", moveBibLeft + "px");
         console.log(percentageScrolled);
 

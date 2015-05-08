@@ -60,7 +60,8 @@ a, a.visited {
     margin-bottom: .5em;
     width: 100%;
     padding: .5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 .pageLink:hover, .pageLink:active {
     background-color: #CCCCFF;
@@ -68,6 +69,10 @@ a, a.visited {
 
 .pageLinkActive {
     display: inline-block;
+}
+
+.pageLinkFirst {
+    text-align: center;
 }
 
 .dialog {
@@ -129,6 +134,7 @@ a, a.visited {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 999;
     // transform: rotateY(0deg);
     // -webkit-transform: rotateY(0deg);
     // -moz-transform: rotateY(0deg);

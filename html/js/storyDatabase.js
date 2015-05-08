@@ -4,7 +4,7 @@ var storyDatabase = {
                 "ID":0,
                 "end":false,
                 "scene":"city",
-                "bodyText":"Once upon a time there was a robot named Bib. Bib had lived in the city his whole life, but was starting to hate it. He decided one day to leave the city in search of nature and began his long trip to the forest.</p><p>As he approached the forest for the first time, he heard some scuffling. It sounded like a fight.</p><p>He headed toward the sound and found three mean hawks trying to trap a fluffy little kitten. “That poor kitten!” Bib thinks, but realizes he has a choice.",
+                "bodyText":"<p>As he approached the forest for the first time, he heard some scuffling. It sounded like a fight.</p><p>He headed toward the sound and found three mean hawks trying to trap a fluffy little kitten. “That poor kitten!” Bib thinks, but realizes he has a choice.",
                 "choiceLinks":[
                     {
                         "linkText":"Bib can continue on--this is not his fight after all!",

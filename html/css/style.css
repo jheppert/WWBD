@@ -24,11 +24,16 @@ body {
     height: 100%; }
     .nav a:first-child {
       margin-left: 0; }
+    .nav a:hover:after {
+      content: attr(alt);
+      position: relative;
+      top: 0;
+      left: -25%; }
     .nav a img {
       width: 100%;
       display: block;
       border-radius: 50%;
-      background-color: gray; }
+      background-color: #383838; }
 
 .page {
   padding: 2% 2%;
@@ -38,20 +43,27 @@ body {
 a, a.visited {
   text-decoration: none; }
 
+p {
+  margin-top: 0; }
+
 .pageLink, .pageLink:visited {
   display: none;
   color: black;
   /*border: 1px solid #ddd;*/
   border-radius: 3px;
-  background-color: #ddd;
-  margin-bottom: .5em;
+  margin-top: .5em;
   width: 100%;
   padding: .5em;
   font-size: 1.1em;
-  font-weight: 600; }
-
-.pageLink:hover, .pageLink:active {
-  background-color: #CCCCFF; }
+  font-weight: 600;
+  background-color: #eee;
+  border: 1px solid #ddd; }
+  .pageLink:hover, .pageLink:visited:hover {
+    background-color: #fff;
+    border: 1px solid #bbb; }
+  .pageLink:active, .pageLink:visited:active {
+    background-color: #ddd;
+    border: 1px solid #ccc; }
 
 .pageLinkActive {
   display: inline-block; }
@@ -65,7 +77,8 @@ a, a.visited {
   margin-right: auto;
   background-color: white;
   padding: 1em;
-  border-radius: 3px; }
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px #888; }
 
 .city {
   background: url("../img/backgrounds_city.jpg");
@@ -103,7 +116,14 @@ a, a.visited {
   margin-right: auto;
   border-radius: 25px;
   background-color: #ccc;
-  padding: 10px; }
+  background-color: #eee;
+  border: 1px solid #ddd; }
+  .icon:hover {
+    background-color: #fff;
+    border: 1px solid #bbb; }
+  .icon:active {
+    background-color: #ddd;
+    border: 1px solid #ccc; }
 
 #robot {
   height: 40vh;
@@ -117,6 +137,13 @@ a, a.visited {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -o-transform: rotateY(180deg); }
+
+.theEnd {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center; }
 
 @media (max-width: 1400px) {
   .city {

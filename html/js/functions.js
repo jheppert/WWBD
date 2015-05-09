@@ -42,7 +42,7 @@ function returnPageText(currentPageID){
 // Otherwise, returns all of the html links for the current page (based on passed value)
 function returnPageLinks(currentPageID){
     if(storyDatabase.pages[currentPageID].end){
-        return "<strong>THE END</strong>";
+        return "<div class='theEnd'>THE END</div>";
     } else {
         var resultLength = storyDatabase.pages[currentPageID].choiceLinks.length;
         var resultString = "<div class='bigLinkContainer'>";

@@ -2,6 +2,22 @@
 
 $border-corners: 3px;
 
+@mixin button-style() {
+    // background: linear-gradient(#fff, #ddd);
+    background-color: #eee;
+    border: 1px solid #ddd;
+    &:hover {
+        // background: linear-gradient(#fff, #eee);
+        background-color: #fff;
+        border: 1px solid #bbb;
+    }
+    &:active {
+        // background: linear-gradient(#eee, #fff);
+        background-color: #ddd;
+        border: 1px solid #ccc;
+    }
+}
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -32,11 +48,17 @@ body {
         &:first-child{
             margin-left: 0;
         }
+        &:hover:after {
+            content: attr(alt);
+            position: relative;
+            top: 0;
+            left: -25%;
+        }
         img {
             width: 100%;
             display: block;
             border-radius: 50%;
-            background-color: gray;
+            background-color: #383838;
         }
     }
 }
@@ -51,20 +73,22 @@ a, a.visited {
     text-decoration: none;
 }
 
+p {
+    margin-top: 0;
+}
+
 .pageLink, .pageLink:visited {
     display: none;
     color: black;
     /*border: 1px solid #ddd;*/
     border-radius: $border-corners;
-    background-color: #ddd;
-    margin-bottom: .5em;
+    // background-color: #ddd;
+    margin-top: .5em;
     width: 100%;
     padding: .5em;
     font-size: 1.1em;
     font-weight: 600;
-}
-.pageLink:hover, .pageLink:active {
-    background-color: #CCCCFF;
+    @include button-style();
 }
 
 .pageLinkActive {
@@ -82,6 +106,7 @@ a, a.visited {
     background-color: white;
     padding: 1em;
     border-radius: $border-corners;
+    box-shadow: 1px 1px 5px #888;
 }
 
 .city {
@@ -126,7 +151,8 @@ a, a.visited {
     margin-right: auto;
     border-radius: 25px;
     background-color: #ccc;
-    padding: 10px;
+    // padding: 10px;
+    @include button-style();
 }
 
 #robot {
@@ -135,17 +161,21 @@ a, a.visited {
     bottom: 0;
     left: 0;
     z-index: 999;
-    // transform: rotateY(0deg);
-    // -webkit-transform: rotateY(0deg);
-    // -moz-transform: rotateY(0deg);
-    // -o-transform: rotateY(0deg);
-    // left: calc(50vw - ((5/6) * 40vh));
+    // box-shadow: 1px 1px 5px #888;
 }
 .reverseBib {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
+}
+
+.theEnd {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
 }
 
 

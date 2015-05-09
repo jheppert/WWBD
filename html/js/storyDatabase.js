@@ -4,7 +4,7 @@ var storyDatabase = {
                 "ID":0,
                 "end":false,
                 "scene":"city",
-                "bodyText":"<p>As he approached the forest for the first time, he heard some scuffling. It sounded like a fight.</p><p>He headed toward the sound and found three mean hawks trying to trap a fluffy little kitten. “That poor kitten!” Bib thinks, but realizes he has a choice.",
+                "bodyText":"As he approached the forest for the first time, he heard some scuffling. It sounded like a fight.</p><p>He headed toward the sound and found three mean hawks trying to trap a fluffy little kitten. “That poor kitten!” Bib thinks, but realizes he has a choice.",
                 "choiceLinks":[
                     {
                         "linkText":"Bib can continue on--this is not his fight after all!",
@@ -100,30 +100,35 @@ var storyDatabase = {
             {
                 "ID":4,
                 "end":true,
+                "bibDies":true,
                 "scene":"beach",
                 "bodyText":"The hawks don't understand robot and carry Bib off into the sky. They drop him into the ocean and he is never seen again."
             },
             {
                 "ID":5,
                 "end":true,
+                "bibDies":true,
                 "scene":"forest",
                 "bodyText":"The kitten proves Bib's suspicions. He's too fierce and kills Bib with a single, sharp kitten claw. The kitten then becomes the ruler of the forest."
             },
             {
                 "ID":6,
                 "end":true,
+                "bibDies":false,
                 "scene":"forest",
                 "bodyText":"Bib successfully scares away the hawks for good and becomes the new leader of the forest. He lives happily ever after in nature, respected and feared by all who live in the forest."
             },
             {
                 "ID":7,
                 "end":true,
+                "bibDies":false,
                 "scene":"beach",
                 "bodyText":"Bib luckily escapes with his life, but he still can't bring himself to go back to city life. He continues on until he reaches the ocean. Though it's not the forest, Bib is happy to live out the rest of his life in nature, beach style."
             },
             {
                 "ID":8,
                 "end":true,
+                "bibDies":false,
                 "scene":"beach",
                 "bodyText":"Once the bodies are taken care of, Bib and the kitten realize they make a pretty good team. They take off together, heading west until they reach the ocean. They live out the rest of their days as fugitives on the beach."
             }

@@ -123,7 +123,8 @@ p {
   .character_page h1 {
     margin-top: 0;
     text-align: center;
-    padding-top: 2em; }
+    padding-top: 2em;
+    padding-bottom: 1em; }
   .character_page img {
     width: 22%;
     padding-right: 2em; }
@@ -131,10 +132,13 @@ p {
     list-style-type: none; }
 
 .character_content {
-  width: 70%;
+  width: 40em;
   margin: 0 auto; }
   .character_content img {
     float: left; }
+
+.character_groups {
+  padding-bottom: 1em; }
 
 .iconLink {
   display: inline-block;
@@ -255,6 +259,33 @@ p {
   .beach {
     background: url("../img/backgrounds_beach-840.jpg");
     background-size: cover;
-    background-attachment: fixed; } }
+    background-attachment: fixed; }
+
+  .character_content {
+    width: 28em;
+    margin: 0 auto; }
+    .character_content img {
+      float: center;
+      text-align: center; }
+
+  .character_paragraphs {
+    width: 28em;
+    text-align: center; }
+
+  .character_page {
+    background: url("../img/background_character_page.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%; }
+    .character_page img {
+      width: 40%;
+      margin: 0 auto;
+      display: block;
+      padding-right: 0; }
+    .character_page li {
+      list-style-type: none; }
+
+  .character_groups {
+    padding-bottom: 2em; } }
 
 /*# sourceMappingURL=style.css.map */

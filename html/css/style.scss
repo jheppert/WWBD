@@ -160,6 +160,7 @@ p {
         margin-top: 0;
         text-align: center;
         padding-top: 2em;
+        padding-bottom: 1em;
     }
 
     img {
@@ -173,7 +174,7 @@ p {
 }
 
 .character_content {
-    width: 70%;
+    width: 40em;
     margin: 0 auto;
 
     img {
@@ -181,8 +182,8 @@ p {
     }
 }
 
-.character_paragraphs {
-
+.character_groups {
+    padding-bottom: 1em;
 }
 
 .iconLink {
@@ -332,6 +333,43 @@ p {
         background: url("../img/backgrounds_beach-840.jpg");
         background-size: cover;
         background-attachment: fixed;
+    }
+
+    .character_content {
+    width: 28em;
+    margin: 0 auto;
+
+        img {
+            float: center;
+            text-align: center;
+        }
+    }
+
+    .character_paragraphs {
+        width: 28em;
+        text-align: center;
+    }
+
+    .character_page {
+    background: url("../img/background_character_page.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+
+        img {
+            width: 40%;
+            margin: 0 auto;
+            display: block;
+            padding-right: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .character_groups {
+    padding-bottom: 2em;
     }
 
 }

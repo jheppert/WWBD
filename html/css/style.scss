@@ -163,8 +163,8 @@ p {
     }
 
     img {
-        width: 15%;
-        padding-bottom: 2em;
+        width: 22%;
+        padding-right: 2em;
     }
 
     li {
@@ -175,6 +175,14 @@ p {
 .character_content {
     width: 70%;
     margin: 0 auto;
+
+    img {
+        float: left;
+    }
+}
+
+.character_paragraphs {
+
 }
 
 .iconLink {

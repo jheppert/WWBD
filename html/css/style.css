@@ -125,14 +125,16 @@ p {
     text-align: center;
     padding-top: 2em; }
   .character_page img {
-    width: 15%;
-    padding-bottom: 2em; }
+    width: 22%;
+    padding-right: 2em; }
   .character_page li {
     list-style-type: none; }
 
 .character_content {
   width: 70%;
   margin: 0 auto; }
+  .character_content img {
+    float: left; }
 
 .iconLink {
   display: inline-block;

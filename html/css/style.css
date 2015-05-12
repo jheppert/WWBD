@@ -35,6 +35,24 @@ body {
       border-radius: 50%;
       background-color: #383838; }
 
+.titleContainer {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.titleHeader {
+  text-align: center;
+  margin-top: 10vh; }
+
+.roundImage {
+  border-radius: 50%;
+  display: block; }
+
+.featureImage {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .page {
   padding: 2% 2%;
   height: 100vh;
@@ -144,6 +162,19 @@ p {
   font-size: 2em;
   font-weight: 700;
   text-align: center; }
+
+.environment {
+  height: 100vh;
+  width: 100vw; }
+
+.bubbleContainer {
+  width: 70vw;
+  padding-top: 30vh;
+  margin-left: auto;
+  margin-right: auto; }
+
+.bubble {
+  width: 30%; }
 
 @media (max-width: 1400px) {
   .city {

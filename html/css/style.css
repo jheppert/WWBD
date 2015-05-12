@@ -113,6 +113,11 @@ p {
   background-size: cover;
   background-attachment: fixed; }
 
+.character_page {
+  background: url("../img/background_character_page.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
 .iconLink {
   display: inline-block;
   overflow: auto;

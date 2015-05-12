@@ -1,6 +1,7 @@
 // @import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
 
 $border-corners: 3px;
+$background-transition: background .5s linear;
 
 @mixin button-style() {
     // background: linear-gradient(#fff, #ddd);
@@ -135,16 +136,19 @@ p {
     background: url("../img/backgrounds_city.jpg");
     background-size: cover;
     background-attachment: fixed;
+    transition: $background-transition;
 }
 .forest {
     background: url("../img/backgrounds_forest.jpg");
     background-size: cover;
     background-attachment: fixed;
+    transition: $background-transition;
 }
 .beach {
     background: url("../img/backgrounds_beach.jpg");
     background-size: cover;
     background-attachment: fixed;
+    transition: $background-transition;
 }
 
 .character_page {
@@ -233,14 +237,42 @@ p {
 
 .bubbleContainer {
     width: 70vw;
-    padding-top: 30vh;
+    padding-top: 10vh;
     margin-left: auto;
     margin-right: auto;
 }
 
 .bubble {
     width: 30%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
+
+.bubbleDescription {
+    display: none;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    // background-color: white;
+    // padding: .5em;
+    h3 {
+        font-size: 2em;
+        text-align: center;
+        margin-top: 0;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+.activeBubbleDescription {
+    display: block;
+}
+
+
+
+
 
 
 @media (max-width: 1400px) {

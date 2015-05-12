@@ -101,17 +101,20 @@ p {
 .city {
   background: url("../img/backgrounds_city.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  transition: background 0.5s linear; }
 
 .forest {
   background: url("../img/backgrounds_forest.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  transition: background 0.5s linear; }
 
 .beach {
   background: url("../img/backgrounds_beach.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  transition: background 0.5s linear; }
 
 .iconLink {
   display: inline-block;
@@ -169,12 +172,30 @@ p {
 
 .bubbleContainer {
   width: 70vw;
-  padding-top: 30vh;
+  padding-top: 10vh;
   margin-left: auto;
   margin-right: auto; }
 
 .bubble {
-  width: 30%; }
+  width: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%; }
+
+.bubbleDescription {
+  display: none;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  .bubbleDescription h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0; }
+  .bubbleDescription p {
+    font-size: 1.2em; }
+
+.activeBubbleDescription {
+  display: block; }
 
 @media (max-width: 1400px) {
   .city {

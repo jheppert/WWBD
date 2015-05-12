@@ -151,6 +151,26 @@ p {
     background: url("../img/background_character_page.jpg");
     background-size: cover;
     background-attachment: fixed;
+
+    h1 {
+        margin-top: 0;
+        text-align: center;
+        padding-top: 2em;
+    }
+
+    img {
+        width: 15%;
+        padding-bottom: 2em;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.character_content {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .iconLink {

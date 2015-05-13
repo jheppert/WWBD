@@ -19,6 +19,23 @@ $background-transition: background .5s linear;
     }
 }
 
+$quicksand: font-family 'Quicksand-Regular';
+$bodedo: font-family 'HVDBodedo';
+
+@mixin declare-font-face($font-facename, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+    @font-face {
+    font-family: '#{$font-facename}';
+    src: url('#{$font-filename}.otf');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+    }
+}
+
+@include declare-font-face('Quicksand-Bold', './fonts/Quicksand-Bold');
+@include declare-font-face('Quicksand-Regular', './fonts/Quicksand-Regular');
+@include declare-font-face('HVDBodedo', './fonts/HVDBodedo');
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -40,6 +57,7 @@ body {
     position: fixed;
     top: 30px;
     right: 30px;
+    font-family: $quicksand;
     a {
         display: block;
         float: left;
@@ -98,6 +116,7 @@ a, a.visited {
 
 p {
     margin-top: 0;
+    font-family: $quicksand;
 }
 
 .pageLink, .pageLink:visited {
@@ -161,6 +180,7 @@ p {
         text-align: center;
         padding-top: 2em;
         padding-bottom: 1em;
+        font-family: $bodedo;
     }
 
     img {
@@ -184,6 +204,13 @@ p {
 
 .character_groups {
     padding-bottom: 1em;
+    h2 {
+        font-family: $quicksand;
+        font-weight: normal;
+     }
+    p {
+    font-family: $quicksand;
+    }
 }
 
 .iconLink {
@@ -271,6 +298,12 @@ p {
     }
 }
 
+.bubbleContainer {
+    h1 {
+        font-family: $bodedo;
+    }
+}
+
 .bubbleDescription {
     display: none;
     width: 80%;
@@ -284,9 +317,14 @@ p {
         text-align: center;
         margin-top: 0;
         margin-bottom: .5em;
+        font-family: $quicksand;
+        font-weight: normal;
+        padding-top: .5em;
     }
     p {
         font-size: 1.2em;
+        font-family: $quicksand;
+        padding: .8em;
     }
 }
 

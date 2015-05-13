@@ -124,7 +124,8 @@ p {
   line-height: 1.5em; }
 
 .WWBD {
-  padding-top: 5em; }
+  padding-top: 5em;
+  display: block; }
 
 .index_page {
   background: url("../img/background_index.jpg");

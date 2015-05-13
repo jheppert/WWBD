@@ -20,6 +20,7 @@ $background-transition: background .5s linear;
 }
 
 $quicksand: font-family 'Quicksand-Regular';
+$quicksand-bold: font-family 'Quicksand-Bold';
 $bodedo: font-family 'HVDBodedo';
 
 @mixin declare-font-face($font-facename, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
@@ -183,6 +184,7 @@ p {
     background: url("../img/background_index.jpg");
     background-size: cover;
     background-attachment: fixed;
+    height: 100%;
 }
 
 .city {
@@ -190,24 +192,28 @@ p {
     background-size: cover;
     background-attachment: fixed;
     transition: $background-transition;
+    height: 100%;
 }
 .forest {
     background: url("../img/backgrounds_forest.jpg");
     background-size: cover;
     background-attachment: fixed;
     transition: $background-transition;
+    height: 100%;
 }
 .beach {
     background: url("../img/backgrounds_beach.jpg");
     background-size: cover;
     background-attachment: fixed;
     transition: $background-transition;
+    height: 100%;
 }
 
 .character_page {
     background: url("../img/background_character_page.jpg");
     background-size: cover;
     background-attachment: fixed;
+    height: 100%;
 
     h1 {
         margin-top: 0;
@@ -230,6 +236,7 @@ p {
 .character_content {
     width: 40em;
     margin: 0 auto;
+    margin-bottom: 4em;
 
     img {
         float: left;
@@ -239,11 +246,27 @@ p {
 .character_groups {
     padding-bottom: 3em;
     h2 {
-        font-family: $quicksand;
+        font-family: $quicksand-bold;
         font-weight: normal;
      }
     p {
     font-family: $quicksand;
+    }
+
+    img {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    a {
+        color: black;
+        font-family: $quicksand-bold;
+    }
+}
+
+.character_paragraphs {
+    p {
+
     }
 }
 
@@ -342,6 +365,7 @@ p {
 .bubbleDescription {
     display: none;
     width: 80%;
+    margin-bottom: 4em;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, .8);
@@ -352,7 +376,7 @@ p {
         text-align: center;
         margin-top: 0;
         margin-bottom: .5em;
-        font-family: $quicksand;
+        font-family: $quicksand-bold;
         font-weight: normal;
         padding-top: .5em;
     }

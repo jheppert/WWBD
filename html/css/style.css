@@ -276,7 +276,6 @@ p {
     background-size: cover;
     background-attachment: fixed; }
 
-<<<<<<< HEAD
   .character_content {
     width: 28em;
     margin: 0 auto; }
@@ -302,16 +301,14 @@ p {
       list-style-type: none; }
 
   .character_groups {
-    padding-bottom: 2em; } }
-=======
-  .bubbleContainer {
-    padding-top: .5vh; } }
-@media (max-width: 625px) {
+    padding-bottom: 2em; }
+    .character_groups .bubbleContainer {
+      padding-top: .5vh; } }
+@media (max-width: 840px) and (max-width: 625px) {
   .bubbleContainer {
     width: 100vw; }
 
   .bubbleWrap {
     padding: .5em; } }
->>>>>>> 0ce12d68d1d84c6afc1e6d2ed9125cbcfbd8eb4e
 
 /*# sourceMappingURL=style.css.map */

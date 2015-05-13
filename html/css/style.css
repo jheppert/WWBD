@@ -61,7 +61,8 @@ body {
 
 .titleHeader {
   text-align: center;
-  margin-top: 10vh; }
+  margin-top: 0;
+  padding-top: 4em; }
 
 .roundImage {
   border-radius: 50%;
@@ -95,7 +96,9 @@ p {
   font-size: 1.1em;
   font-weight: 600;
   background-color: #eee;
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+  font-family: font-family "Quicksand-Regular";
+  font-style: regular; }
   .pageLink:hover, .pageLink:visited:hover {
     background-color: #fff;
     border: 1px solid #bbb; }
@@ -113,10 +116,20 @@ p {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3em;
   background-color: white;
-  padding: 1em;
+  padding: 2em;
   border-radius: 3px;
-  box-shadow: 1px 1px 5px #888; }
+  box-shadow: 1px 1px 5px #888;
+  line-height: 1.5em; }
+
+.WWBD {
+  padding-top: 5em; }
+
+.index_page {
+  background: url("../img/background_index.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 .city {
   background: url("../img/backgrounds_city.jpg");
@@ -214,7 +227,8 @@ p {
   margin-bottom: 2em;
   font-size: 2em;
   font-weight: 700;
-  text-align: center; }
+  text-align: center;
+  font-family: font-family "HVDBodedo"; }
 
 .environment {
   height: 100vh;
@@ -269,6 +283,15 @@ p {
 
 .activeBubbleDescription {
   display: block; }
+
+.bigLinkContainer {
+  font-family: font-family "Quicksand-Regular";
+  padding-top: 1em; }
+
+.pageLink {
+  padding: 1em;
+  text-align: center;
+  line-height: 2em; }
 
 @media (max-width: 1400px) {
   .city {
@@ -337,7 +360,9 @@ p {
   .character_groups {
     padding-bottom: 2em; }
     .character_groups .bubbleContainer {
-      padding-top: .5vh; } }
+      padding-top: .5vh; }
+    .character_groups .dialog {
+      margin-top: 0; } }
 @media (max-width: 840px) and (max-width: 625px) {
   .bubbleContainer {
     width: 100vw; }

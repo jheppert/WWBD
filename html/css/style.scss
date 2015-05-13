@@ -90,7 +90,8 @@ body {
 
 .titleHeader {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 0;
+    padding-top: 4em;
 }
 
 .roundImage {
@@ -131,6 +132,8 @@ p {
     font-size: 1.1em;
     font-weight: 600;
     @include button-style();
+    font-family: $quicksand;
+    font-style: regular;
 }
 
 .pageLinkActive {
@@ -145,10 +148,23 @@ p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3em;
     background-color: white;
-    padding: 1em;
+    padding: 2em;
     border-radius: $border-corners;
     box-shadow: 1px 1px 5px #888;
+    line-height: 1.5em;
+}
+
+.WWBD {
+    padding-top: 5em;
+
+}
+
+.index_page {
+    background: url("../img/background_index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .city {
@@ -264,6 +280,7 @@ p {
     font-size: 2em;
     font-weight: 700;
     text-align: center;
+    font-family: $bodedo;
 }
 
 .environment {
@@ -332,6 +349,16 @@ p {
     display: block;
 }
 
+.bigLinkContainer {
+    font-family: $quicksand;
+    padding-top: 1em;
+}
+
+.pageLink {
+    padding: 1em;
+    text-align: center;
+    line-height: 2em;
+}
 
 
 
@@ -388,7 +415,6 @@ p {
         background-attachment: fixed;
     }
 
-
     .character_content {
     width: 28em;
     margin: 0 auto;
@@ -427,6 +453,10 @@ p {
 
     .bubbleContainer {
         padding-top: .5vh;
+    }
+
+    .dialog {
+        margin-top: 0;
     }
 
 }

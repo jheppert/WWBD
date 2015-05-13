@@ -17,8 +17,9 @@
     <script src="libs/movieclip-0.7.1.min.js"></script>
     <script src="libs/preloadjs-0.4.1.min.js"></script>
     <script src="js/Flash-Robot.js"></script>
+    <script src="js/Flash_Hawk.js"></script>
 </head>
-<body onload="init();">
+<body onload="init(); init2();">
 
 
     
@@ -40,6 +41,37 @@
         </nav>
 
     </div>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init2() {
+    canvas = document.getElementById("hawk");
+    images = images||{};
+
+    var loader = new createjs.LoadQueue(false);
+    loader.addEventListener("fileload", handleFileLoad);
+    loader.addEventListener("complete", handleComplete);
+    loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+    if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+    exportRoot = new lib.Flash_Hawk();
+
+    stage = new createjs.Stage(canvas);
+    stage.addChild(exportRoot);
+    stage.update();
+
+    createjs.Ticker.setFPS(lib.properties.fps);
+    createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+
+<canvas id="hawk" width="500" height="600"></canvas>
 
 </body>
 </html>

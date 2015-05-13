@@ -32,9 +32,9 @@ $bodedo: font-family 'HVDBodedo';
     }
 }
 
-@include declare-font-face('Quicksand-Bold', './fonts/Quicksand-Bold');
-@include declare-font-face('Quicksand-Regular', './fonts/Quicksand-Regular');
-@include declare-font-face('HVDBodedo', './fonts/HVDBodedo');
+@include declare-font-face('Quicksand-Bold', '../fonts/Quicksand-Bold');
+@include declare-font-face('Quicksand-Regular', '../fonts/Quicksand-Regular');
+@include declare-font-face('HVDBodedo', '../fonts/HVDBodedo');
 
 * {
     box-sizing: border-box;
@@ -301,7 +301,7 @@ p {
 }
 
 .environment {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 

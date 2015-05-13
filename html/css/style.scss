@@ -19,6 +19,23 @@ $background-transition: background .5s linear;
     }
 }
 
+$quicksand: font-family 'Quicksand-Regular';
+$bodedo: font-family 'HVDBodedo';
+
+@mixin declare-font-face($font-facename, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+    @font-face {
+    font-family: '#{$font-facename}';
+    src: url('#{$font-filename}.otf');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+    }
+}
+
+@include declare-font-face('Quicksand-Bold', './fonts/Quicksand-Bold');
+@include declare-font-face('Quicksand-Regular', './fonts/Quicksand-Regular');
+@include declare-font-face('HVDBodedo', './fonts/HVDBodedo');
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -40,6 +57,7 @@ body {
     position: fixed;
     top: 30px;
     right: 30px;
+    font-family: $quicksand;
     a {
         display: block;
         float: left;
@@ -73,7 +91,8 @@ body {
 
 .titleHeader {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 0;
+    padding-top: 4em;
 }
 
 .roundImage {
@@ -99,6 +118,7 @@ a, a.visited {
 
 p {
     margin-top: 0;
+    font-family: $quicksand;
 }
 
 .pageLink, .pageLink:visited {
@@ -113,6 +133,8 @@ p {
     font-size: 1.1em;
     font-weight: 600;
     @include button-style();
+    font-family: $quicksand;
+    font-style: normal;
 }
 
 .pageLinkActive {
@@ -127,10 +149,39 @@ p {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3em;
     background-color: white;
-    padding: 1em;
+    padding: 2em;
     border-radius: $border-corners;
     box-shadow: 1px 1px 5px #888;
+    line-height: 1.5em;
+}
+
+.WWBD {
+    padding-top: 2em;
+    display: block;
+    position: static;
+    z-index: 999;
+    margin-top: -12em;
+    padding-bottom: 2.5em;
+    width: 280px;
+}
+
+.WWBD_title {
+    position: static;
+    z-index: -999;
+    margin-top: 4em;
+    width: 100%;
+}
+
+.circle_icon {
+    opacity: .9;
+}
+
+.index_page {
+    background: url("../img/background_index.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .city {
@@ -150,6 +201,49 @@ p {
     background-size: cover;
     background-attachment: fixed;
     transition: $background-transition;
+}
+
+.character_page {
+    background: url("../img/background_character_page.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    h1 {
+        margin-top: 0;
+        text-align: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        font-family: $bodedo;
+    }
+
+    img {
+        width: 22%;
+        padding-right: 2em;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}
+
+.character_content {
+    width: 40em;
+    margin: 0 auto;
+
+    img {
+        float: left;
+    }
+}
+
+.character_groups {
+    padding-bottom: 3em;
+    h2 {
+        font-family: $quicksand;
+        font-weight: normal;
+     }
+    p {
+    font-family: $quicksand;
+    }
 }
 
 .iconLink {
@@ -203,6 +297,7 @@ p {
     font-size: 2em;
     font-weight: 700;
     text-align: center;
+    font-family: $bodedo;
 }
 
 .environment {
@@ -237,6 +332,12 @@ p {
     }
 }
 
+.bubbleContainer {
+    h1 {
+        font-family: $bodedo;
+    }
+}
+
 .bubbleDescription {
     display: none;
     width: 80%;
@@ -250,9 +351,14 @@ p {
         text-align: center;
         margin-top: 0;
         margin-bottom: .5em;
+        font-family: $quicksand;
+        font-weight: normal;
+        padding-top: .5em;
     }
     p {
         font-size: 1.2em;
+        font-family: $quicksand;
+        padding: .8em;
     }
 }
 
@@ -260,6 +366,16 @@ p {
     display: block;
 }
 
+.bigLinkContainer {
+    font-family: $quicksand;
+    padding-top: 1em;
+}
+
+.pageLink {
+    padding: 1em;
+    text-align: center;
+    line-height: 2em;
+}
 
 
 
@@ -316,8 +432,48 @@ p {
         background-attachment: fixed;
     }
 
+    .character_content {
+    width: 28em;
+    margin: 0 auto;
+
+        img {
+            float: center;
+            text-align: center;
+        }
+    }
+
+    .character_paragraphs {
+        width: 28em;
+        text-align: center;
+    }
+
+    .character_page {
+    background: url("../img/background_character_page.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+
+        img {
+            width: 40%;
+            margin: 0 auto;
+            display: block;
+            padding-right: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .character_groups {
+    padding-bottom: 2em;
+
     .bubbleContainer {
         padding-top: .5vh;
+    }
+
+    .dialog {
+        margin-top: 0;
     }
 
 }
@@ -331,5 +487,38 @@ p {
     .bubbleWrap {
         padding: .5em;
     }
+
+
+    .WWBD {
+        padding-top: 5em;
+        width: 200px;
+    
+    }
+
+    .circle_icon {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .character_content {
+        width: 100%;
+        margin-right: 0;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    .character_groups {
+        margin-right: 0;
+    }
+
+    .character_paragraphs {
+        width: 90%;
+        display: block;
+        padding-right: 0;
+    }
+
+}
 
 }

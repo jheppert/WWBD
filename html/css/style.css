@@ -127,6 +127,9 @@ p {
   padding-top: 5em;
   display: block; }
 
+.circle_icon {
+  opacity: .9; }
+
 .index_page {
   background: url("../img/background_index.jpg");
   background-size: cover;

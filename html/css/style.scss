@@ -133,7 +133,7 @@ p {
     font-weight: 600;
     @include button-style();
     font-family: $quicksand;
-    font-style: regular;
+    font-style: normal;
 }
 
 .pageLinkActive {

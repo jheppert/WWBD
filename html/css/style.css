@@ -98,7 +98,7 @@ p {
   background-color: #eee;
   border: 1px solid #ddd;
   font-family: font-family "Quicksand-Regular";
-  font-style: regular; }
+  font-style: normal; }
   .pageLink:hover, .pageLink:visited:hover {
     background-color: #fff;
     border: 1px solid #bbb; }

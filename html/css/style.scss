@@ -70,8 +70,10 @@ body {
         &:hover:after {
             content: attr(alt);
             position: relative;
-            top: 0;
             left: -25%;
+            color: black;
+            text-align: center;
+            top: 1em;
         }
         img {
             width: 100%;

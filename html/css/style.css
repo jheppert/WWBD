@@ -124,8 +124,19 @@ p {
   line-height: 1.5em; }
 
 .WWBD {
-  padding-top: 5em;
-  display: block; }
+  padding-top: 2em;
+  display: block;
+  position: static;
+  z-index: 999;
+  margin-top: -12em;
+  padding-bottom: 2.5em;
+  width: 280px; }
+
+.WWBD_title {
+  position: static;
+  z-index: -999;
+  margin-top: 4em;
+  width: 100%; }
 
 .circle_icon {
   opacity: .9; }
@@ -161,7 +172,7 @@ p {
     margin-top: 0;
     text-align: center;
     padding-top: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     font-family: font-family "HVDBodedo"; }
   .character_page img {
     width: 22%;
@@ -176,7 +187,7 @@ p {
     float: left; }
 
 .character_groups {
-  padding-bottom: 1em; }
+  padding-bottom: 3em; }
   .character_groups h2 {
     font-family: font-family "Quicksand-Regular";
     font-weight: normal; }
@@ -372,6 +383,28 @@ p {
     width: 100vw; }
 
   .bubbleWrap {
-    padding: .5em; } }
+    padding: .5em; }
+
+  .WWBD {
+    padding-top: 5em;
+    width: 200px; }
+
+  .circle_icon {
+    margin-right: 0;
+    margin-left: 0; }
+
+  .character_content {
+    width: 100%;
+    margin-right: 0; }
+    .character_content h1 {
+      margin: 0; }
+
+  .character_groups {
+    margin-right: 0; }
+
+  .character_paragraphs {
+    width: 90%;
+    display: block;
+    padding-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

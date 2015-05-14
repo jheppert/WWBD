@@ -12,7 +12,7 @@
   font-stretch: normal; }
 @font-face {
   font-family: "HVDBodedo";
-  src: url("../fonts/HVDBodedo.otf");
+  src: url("../fonts/HVDBodedo.ttf");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal; }
@@ -45,16 +45,25 @@ body {
       margin-left: 0; }
     .nav a:hover:after {
       content: attr(alt);
-      position: relative;
-      left: -25%;
+      display: block;
+      position: absolute;
+      top: 4em;
+      background-color: white;
+      padding: .5em;
+      border-radius: 3px;
       color: black;
+      font-family: font-family "Quicksand-Bold";
       text-align: center;
-      top: 1em; }
+      margin-left: auto;
+      margin-right: auto; }
     .nav a img {
       width: 100%;
       display: block;
       border-radius: 50%;
-      background-color: #383838; }
+      background-color: #383838;
+      border: 1px solid white; }
+      .nav a img:hover {
+        border: 1px solid red; }
 
 .titleContainer {
   max-width: 500px;

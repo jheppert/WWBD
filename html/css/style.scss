@@ -23,10 +23,10 @@ $quicksand: font-family 'Quicksand-Regular';
 $quicksand-bold: font-family 'Quicksand-Bold';
 $bodedo: font-family 'HVDBodedo';
 
-@mixin declare-font-face($font-facename, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+@mixin declare-font-face($font-facename, $font-filename, $font-ext : "otf", $font-weight : normal, $font-style :normal, $font-stretch : normal) {
     @font-face {
     font-family: '#{$font-facename}';
-    src: url('#{$font-filename}.otf');
+    src: url('#{$font-filename}.#{$font-ext}');
     font-weight: $font-weight;
     font-style: $font-style;
     font-stretch: $font-stretch;
@@ -35,7 +35,7 @@ $bodedo: font-family 'HVDBodedo';
 
 @include declare-font-face('Quicksand-Bold', '../fonts/Quicksand-Bold');
 @include declare-font-face('Quicksand-Regular', '../fonts/Quicksand-Regular');
-@include declare-font-face('HVDBodedo', '../fonts/HVDBodedo');
+@include declare-font-face('HVDBodedo', '../fonts/HVDBodedo', 'ttf');
 
 * {
     box-sizing: border-box;
@@ -70,17 +70,27 @@ body {
         }
         &:hover:after {
             content: attr(alt);
-            position: relative;
-            left: -25%;
+            display: block;
+            position: absolute;
+            top: 4em;;
+            background-color: white;
+            padding: .5em;
+            border-radius: $border-corners;
             color: black;
+            font-family: $quicksand-bold;
             text-align: center;
-            top: 1em;
+            margin-left: auto;
+            margin-right: auto;
         }
         img {
             width: 100%;
             display: block;
             border-radius: 50%;
             background-color: #383838;
+            border: 1px solid white;
+            &:hover {
+                border: 1px solid red;
+            }
         }
     }
 }

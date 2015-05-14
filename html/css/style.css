@@ -154,7 +154,7 @@ p {
   opacity: .9; }
 
 .index_page {
-  background: url("../img/background_index.jpg");
+  background: url("../img/background_index_scene.png") bottom, url("../img/background_paper_texture.jpg") bottom;
   background-size: cover;
   background-attachment: fixed;
   height: 100%; }

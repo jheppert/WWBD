@@ -262,8 +262,8 @@ p {
   -o-transform: rotateY(180deg); }
 
 .theEnd {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: .5em;
   font-size: 2em;
   font-weight: 700;
   text-align: center;
@@ -277,7 +277,8 @@ p {
   width: 70vw;
   padding-top: .5vh;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding-bottom: 2em; }
 
 .bubbleWrap {
   display: inline-block;
@@ -331,7 +332,8 @@ p {
 .pageLink {
   padding: 1em;
   text-align: center;
-  line-height: 2em; }
+  line-height: 2em;
+  font-family: font-family "Quicksand-Bold"; }
 
 @media (max-width: 1400px) {
   .city {

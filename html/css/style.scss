@@ -551,6 +551,19 @@ p {
 
     .character_groups {
         margin-right: 0;
+
+        p {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3em;
+            background-color: white;
+            padding: 2em;
+            border-radius: $border-corners;
+            box-shadow: 1px 1px 5px #888;
+            line-height: 1.5em;
+            opacity: .9;
+        }
     }
 
     .character_paragraphs {

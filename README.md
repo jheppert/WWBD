@@ -1,5 +1,5 @@
-#What Would Bib Do?
-##Advanced Web Group Project:
+# What Would Bib Do?
+## Advanced Web Group Project:
 - Jeff Heppert
 - Juju Alhumaid
 - Lou Fillingham
@@ -13,7 +13,7 @@ Steps for using git in the terminal:
 * git status
 * git commit -m "initial commit"
 
-##Next steps
+## Next steps
 
 * git commit -a -m "updated"
 * git push -u origin master
